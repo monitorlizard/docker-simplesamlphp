@@ -273,7 +273,7 @@ fi
 
 echo "[$0] Apply Configuration to config.php..."
 
-#Apply Configurations
+#Apply Configurations 
 sed -i "s|'baseurlpath' => 'simplesaml/'|'baseurlpath' => '$CONFIG_BASEURLPATH'|g" /var/simplesamlphp/config/config.php
 
 sed -i "s|'auth.adminpassword' => '123'|'auth.adminpassword' => '$CONFIG_AUTHADMINPASSWORD'|g" /var/simplesamlphp/config/config.php
