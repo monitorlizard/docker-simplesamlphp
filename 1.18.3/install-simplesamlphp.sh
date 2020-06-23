@@ -290,7 +290,7 @@ sed -i "s|'admin.protectindexpage' => false|'admin.protectindexpage' => $CONFIG_
 sed -i "s|'admin.protectmetadata' => false|'admin.protectmetadata' => $CONFIG_ADMINPROTECTMETADATA|g" /var/simplesamlphp/config/config.php
 
 sed -i "s|'saml' => false|'saml' => $CONFIG_DEBUG|g" /var/simplesamlphp/config/config.php
-sed -i "s|'logging.level' => SimpleSAML.Logger::NOTICE|'logging.level' => SimpleSAML\Logger::$CONFIG_LOGGINGLEVEL|g" /var/simplesamlphp/config/config.php
+sed -i "s|'logging.level' => SimpleSAML.Logger::NOTICE|'logging.level' => SimpleSAML\\Logger::$CONFIG_LOGGINGLEVEL|g" /var/simplesamlphp/config/config.php
 sed -i "s|'logging.handler' => 'syslog'|'logging.handler' => '$CONFIG_LOGGINGHANDLER'|g" /var/simplesamlphp/config/config.php
 sed -i "s|'logging.logfile' => 'simplesamlphp.log'|'logging.logfile' => '$CONFIG_LOGFILE'|g" /var/simplesamlphp/config/config.php
 
